@@ -1,0 +1,9 @@
+# 用户 profile 的 patch 层示例(~/.dsh/profiles/web/cordis.patch.yml)。
+# 把下面的 insert 块追加到你自己的 cordis.patch.yml 中。
+- insert:
+    - id: token-billing
+      name: ./token-billing.js
+      config:
+        api: true
+    - id: token-billing-web
+      name: token-billing-web
