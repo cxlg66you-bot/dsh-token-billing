@@ -34,9 +34,24 @@ dsh-token-billing/
 │   └── lib/
 │       ├── index.js        #   空宿主半(行挂载用)
 │       └── client.js       #   统计栏金额 + 设置面板(手写 ModuleLoader bundle)
+├── dynamic-plugin/         # 动态插件演进史归档(pkg-1 ~ pkg-5,见该目录 README)
+├── docs/screenshots/       # 界面截图清单与拍摄说明
 ├── cordis.patch.yml        # profile patch 层插入示例
+├── LICENSE                 # MIT
 └── README.md
 ```
+
+## 界面预览(截图)
+
+插件生效后,计费信息出现在三个位置(截图清单与拍摄方法见
+[docs/screenshots/README.md](docs/screenshots/README.md)):
+
+1. **统计栏金额**(输入框正下方):`💰 本会话 ¥x.xxxx · 累计 ¥y.yyyy · N 次调用`,
+   每 5 秒自动刷新;
+2. **设置面板**:侧边栏 → 设置 → 「Token 计费」,含总量、按会话明细、
+   最近调用、单价表与「清零账单」按钮;
+3. **Run 卡面板**(仅动态插件时代):旧版临时面板,重启后由前两者接管。
+
 
 ## 安装(以 `dsh --profile web` 为例)
 
