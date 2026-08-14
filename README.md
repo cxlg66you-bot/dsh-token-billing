@@ -48,8 +48,14 @@ dsh-token-billing/
 
 1. **统计栏金额**(输入框正下方):`💰 本会话 ¥x.xxxx · 累计 ¥y.yyyy · N 次调用`,
    每 5 秒自动刷新;
+
+   ![统计栏金额](docs/screenshots/stats-bar.png)
+
 2. **设置面板**:侧边栏 → 设置 → 「Token 计费」,含总量、按会话明细、
    最近调用、单价表与「清零账单」按钮;
+
+   ![设置面板](docs/screenshots/settings-page.png)
+
 3. **Run 卡面板**(仅动态插件时代):旧版临时面板,重启后由前两者接管。
 
 
