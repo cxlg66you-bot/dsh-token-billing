@@ -1,5 +1,10 @@
 # dsh-token-billing
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform: DeepSeek Harness](https://img.shields.io/badge/Platform-DeepSeek%20Harness-orange)](#)
+[![Currency: CNY](https://img.shields.io/badge/Currency-CNY%20(default)-e11d48)](#)
+[![GitHub last commit](https://img.shields.io/github/last-commit/cxlg66you-bot/dsh-token-billing)](https://github.com/cxlg66you-bot/dsh-token-billing)
+
 DeepSeek Harness(dsh)持久化 Token 计费插件:按每次模型调用的 token 用量计费,
 默认人民币单价,账单落盘持久保存,并提供对话工具、统计栏金额与设置面板三处入口。
 
@@ -35,7 +40,7 @@ dsh-token-billing/
 │       ├── index.js        #   空宿主半(行挂载用)
 │       └── client.js       #   统计栏金额 + 设置面板(手写 ModuleLoader bundle)
 ├── dynamic-plugin/         # 动态插件演进史归档(pkg-1 ~ pkg-5,见该目录 README)
-├── docs/screenshots/       # 界面截图清单与拍摄说明
+├── docs/screenshots/       # 界面截图(统计栏、设置面板)
 ├── cordis.patch.yml        # profile patch 层插入示例
 ├── LICENSE                 # MIT
 └── README.md
@@ -43,8 +48,7 @@ dsh-token-billing/
 
 ## 界面预览(截图)
 
-插件生效后,计费信息出现在三个位置(截图清单与拍摄方法见
-[docs/screenshots/README.md](docs/screenshots/README.md)):
+插件生效后,计费信息出现在三个位置:
 
 1. **统计栏金额**(输入框正下方):`💰 本会话 ¥x.xxxx · 累计 ¥y.yyyy · N 次调用`,
    每 5 秒自动刷新;
